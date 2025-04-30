@@ -1,0 +1,18 @@
+# Compiled dynamic libraries
+*.so
+*.dylib
+*.dll
+
+# Executable files
+*.exe
+*.out
+*.app
+
+# Build directories
+/build/
+/bin/
+
+# IDE specific files
+.vscode/
+.idea/
+*.code-workspace
