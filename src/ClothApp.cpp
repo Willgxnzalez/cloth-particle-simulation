@@ -11,12 +11,12 @@ namespace cloth
     }
 
     void ClothApp::init() {
-        static const float offsetx = (window.getSize().x - (COLS * PARTICLE_DISTANCE)) / 2.f;
-        static const float offsety = (window.getSize().y - (ROWS * PARTICLE_DISTANCE)) / 2.f;
+        static const float OFFSETX = (window.getSize().x - (COLS * PARTICLE_DISTANCE)) / 2.f;
+        static const float OFFSETY = (window.getSize().y - (ROWS * PARTICLE_DISTANCE)) / 2.f;
         for (int i = 0; i < ROWS; ++i) {
             for (int j = 0; j < COLS; ++j) {
             core::Particle particle;
-            particle.position = {offsetx + j * PARTICLE_DISTANCE, offsety + i * PARTICLE_DISTANCE};
+            particle.position = {OFFSETX + j * PARTICLE_DISTANCE, OFFSETY + i * PARTICLE_DISTANCE};
             particle.previousPosition = particle.position;
             particle.velocity = {0.f, 0.f};
             particle.force = {0.f, 0.f};

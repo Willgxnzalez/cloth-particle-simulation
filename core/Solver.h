@@ -29,7 +29,7 @@ namespace core {
                 particle.force = GRAVITY * particle.mass;
             
             // Integrate particle positions and velocities
-            integrator.step(particles, dt);
+            // integrator.step(particles, dt);
 
             // Apply constraints
             // for (auto &constraint : constraints) {
